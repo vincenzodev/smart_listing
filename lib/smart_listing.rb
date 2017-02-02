@@ -117,7 +117,7 @@ module SmartListing
     end
 
     def param_name key
-      "#{base_param}[#{param_names[key]}]"
+      [key, param_names[key]]
     end
 
     def unlimited_per_page?
